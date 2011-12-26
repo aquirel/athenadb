@@ -2,7 +2,7 @@
 #labels Featured,Phase-Implementation
 = Networking =
 Port by default 3307, listen on all adresses.
-Usage: athena [<bind-address> [<bind-port>]]
+Usage: athena `[<bind-address> [<bind-port>]]`
 
 {{{
 Commands:
