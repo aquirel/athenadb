@@ -1,6 +1,6 @@
 #summary Example session.
 #labels Featured,Phase-Design
-`
+{{{
 Hello.
 ping
 PONG.
@@ -53,4 +53,4 @@ eval ^c
 { { }, { { 1, { 2 }, [ 3 ], 88 }, [ 33, 4, 5 ] }, { [ 33, 4, 5 ] }, { { 1, { 2 }, [ 3 ], 88 } } }
 quit
 Bye.
-`
+}}}
