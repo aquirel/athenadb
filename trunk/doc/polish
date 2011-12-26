@@ -1,0 +1,7 @@
+1 + 2 * 3
+operands: 1 2 3
+operators: + *
+
+1 * 2 + 3
+operands: 2 3
+operators: +
