@@ -48,6 +48,7 @@ operator
 { ... } set
 [ ... ] tuple
 ( ) - brackets for setting operator's precedence
+identifier - name of existing set
 
 Operations:
 + union
