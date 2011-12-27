@@ -401,7 +401,11 @@ dbObject *eval(const sds s, size_t *pos)
     while (0 != stackSize(operators))
     {
         // Perform operation.
-        executeTopOperator(operands, operators);
+        if (NULL == executeTopOperator(operands, operators))
+        {
+            stackDestroy(container);
+            return NULL;
+        }
     }
 
     if (1 != stackSize(operands))
