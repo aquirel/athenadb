@@ -1,19 +1,19 @@
 #summary Small readme.
 #labels Featured,Phase-Implementation
-= Networking =
+== Networking ==
 Port by default 3307, listen on all adresses.
 Usage: athena `[<bind-address> [<bind-port>]]`
 
-{{{
-Commands:
-set a [<expression>] create set
+== Commands ==
+<pre>
+set a `[<expression>]` create set
 del a delete set
 exists a check set's existence
 contains set member check whether set contains member
 rename a b renaming set
 randset returns random set from db
 rand a returns random set member
-eval <expr> calculate expression and print result
+eval `<expr>` calculate expression and print result
 add a 1 add element to set
 rem b 2 remove element from set
 card a get set's cardinality
@@ -35,27 +35,32 @@ sube a b set a is a subset of b or equals to it?
 sub a b set a is a subset of b?
 
 NOTE: expressions can be used almost everywhere.
+</pre>
 
-Some examples:
+== Some examples ==
+<pre>
 add a 1
 rem a 2
 set a b
 set b b + c - d ~ e (x + y) + { 1, 2, 3, [4, 5, 6] }
+</pre>
 
-Expression syntax:
+== Expression syntax ==
+<pre>
 identifier
 operator
-{ ... } set
-[ ... ] tuple
-( ) - brackets for setting operator's precedence
+`{ ... }` set
+`[ ... ]` tuple
+`( )` - brackets for setting operator's precedence
 identifier - name of existing set
+</pre>
 
-Operations:
-+ union
-- difference
-* intersect
-~ sym. difference
-@ cartesian product
-^ boolean (prefix op.)
-
-}}}
+== Operations ==
+<pre>
+`+` union
+`-` difference
+`*` intersect
+`~` sym. difference
+`@` cartesian product
+`^` boolean (prefix op.)
+</pre>
